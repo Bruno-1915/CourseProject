@@ -89,11 +89,13 @@ data_mean <- data %>% group_by(activity, subject) %>%
         mutate_all(funs('mean' = mean))
 len1 <- length(data) + 1
 len2 <- length(data_mean)
+data_mean <- data_mean %>% select(c(1, 2, len1:len2))
 data_mean <- data_mean[!duplicated(data_mean),]
 data_mean <- arrange(data_mean, subject)
 ### Remove extra data
 rm(list = c('activity_labels', 'temp_data'))
 ### Finish
 ### Write a txt with the tidy data set
-write.table(data_mean, file = 'tidy_data.txt', sep = ' ')
+write.table(data_mean, file = 'tidy_data.txt', sep = ' ',
+            row.names = FALSE)
 #### END
