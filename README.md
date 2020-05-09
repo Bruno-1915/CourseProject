@@ -2,7 +2,7 @@
 # Course Project
 
 This is the course project for the Getting and Cleaning Data Coursera course.  
-The included R script 'Cleaning_data.R'
+The included R script 'run_analysis.R'
 , conducts the following:  
 * Read the datasets.  
 * Merge the datasets into measurements, activity and subject.  
