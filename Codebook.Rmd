@@ -1,6 +1,11 @@
-#Code book
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+# Code book
 
-##Modification
+## Modification
 The original data was modifies by:  
 * Mergeing the test and train sets to create one data set  
 * Extract the mean and standard deviation for each measurement  
@@ -8,11 +13,11 @@ The original data was modifies by:
 * Label the data set with descriptive variable names  
 * Creating a second tidy data set with the average of each variable for each activity and subject  
 
-##Descriptions
+## Descriptions
 The first two columns activity and subject are identifiers  
 * subject: the ID of the subject  
 * activity: the name of the activity perfomed by the subject when measurement were taken
 
-##Variables
+## Variables
 For the first data set i use the original variable names.  
 For the second data set just add the string '_mean' to all original variable names
