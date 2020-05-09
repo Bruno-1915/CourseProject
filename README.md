@@ -1,7 +1,6 @@
----
-title: "Course Project"
-output: pdf_document
----
+
+# Course Project
+
 This is the course project for the Getting and Cleaning Data Coursera course.  
 The included R script 'Cleaning_data.R'
 , conducts the following:  
